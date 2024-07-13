@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Letters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-selection">
+            <label for="languageSelect">Select Language:</label>
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="english">English</option>
+                <option value="russian">Russian</option>
+                <!-- Add more languages here -->
+            </select>
+        </div>
+        <div class="letter-placeholder" id="foreignLetter">ა</div>
+        <div class="options">
+            <div class="option" onclick="checkAnswer(this)"></div>
+            <div class="option" onclick="checkAnswer(this)"></div>
+            <div class="option" onclick="checkAnswer(this)"></div>
+            <div class="option" onclick="checkAnswer(this)"></div>
+            <div class="option" onclick="checkAnswer(this)"></div>
+        </div>
+        <!-- <div class="debug-output" id="debugOutput"></div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
